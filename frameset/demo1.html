@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
-
-</body>
+<frameset id="sas" rows="114,*,32" frameborder="0" framespacing="0">
+    <frame name="head" src="head.html">
+    <frameset id="middle" cols="192,*">
+        <frame name="left" src="left.html">
+        <frame name="right" src="right.html"/>
+    </frameset>
+    <frame name="bottom" src="bottom.html"/>
+</frameset>
+<noframes>
+    <body>
+    当前浏览器不支持框架，请使用支持框架显示的浏览器。
+    </body>
+</noframes>
+<script type="text/javascript">
+    console.log(window.frames[0]);
+</script>
 </html>
